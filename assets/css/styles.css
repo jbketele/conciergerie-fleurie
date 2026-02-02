@@ -1,0 +1,67 @@
+/* navbar - header */
+.navbar {
+    background-color: #f5f5f5;
+    /* couleur de fond */
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    /* ligne séparatrice */
+}
+
+.logo-placeholder {
+    width: 48px;
+    height: 48px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: #555;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    /* accent couleur bootstrap */
+}
+
+/* Hamburger mobile */
+.navbar-toggler {
+    border: none;
+}
+
+/* Navbar collapse : centrer sur mobile */
+@media (max-width: 991.98px) {
+
+    /* correspond à lg */
+    .navbar-collapse {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-nav .nav-item:last-child {
+        border-bottom: none;
+    }
+}
