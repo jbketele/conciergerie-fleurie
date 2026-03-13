@@ -4,15 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conciergerie Fleurie - Accueil</title>
+    <title>Esprit Rivage | Conciergerie et Gestion locative</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Dans le <head> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <div id="header"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <header id="header"></header>
+    <section id="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Bienvenue chez Esprit Rivage</h1>
+                <p class="hero-subtitle">Votre conciergerie sur la Côte Fleurie</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-container">
+
+            <div class="about-part history">
+                <h2>Notre histoire</h2>
+                <p>
+                    Installé en Normandie depuis 4 ans, j’ai découvert cette région touristique et ses nombreux atouts.
+                    Soutenu par ma famille et leur réseau local, je mets mes compétences en communication digitale et
+                    développement web au service des propriétaires et des voyageurs pour rendre chaque séjour unique et
+                    agréable.
+                </p>
+            </div>
+
+            <div class="about-part zone">
+                <h2>Notre zone d'intervention</h2>
+                <p>
+                    Esprit Rivage intervient sur toute la Côte Fleurie, de Merville-Franceville à Honfleur, pour
+                    accompagner les propriétaires et accueillir les voyageurs.
+                    Notre présence locale nous permet d’offrir un service réactif et personnalisé, en connaissant
+                    parfaitement chaque commune desservie.
+                </p>
+            </div>
+
+
+
+        </div>
+        <div id="carousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/imgs/cabourg-grand-hotel.jpeg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption overlay">
+                        <h5>Cabourg</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/deauville-planches.jpeg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption overlay">
+                        <h5>Deauville</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/trouville-roches-noires.jpeg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption overlay">
+                        <h5>Trouville</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/honfleur-port.jpeg" class="d-block w-100" alt="Slide 4">
+                    <div class="carousel-caption overlay">
+                        <h5>Honfleur</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <section id="services-summary">
+        <h2>Nos services</h2>
+        <div class="container services-container">
+
+            <div class="service-item">
+                <div class="service-photo">
+                    <img src="assets/imgs/gestion-loc.jpeg" alt="Gestion locative">
+                </div>
+                <h3>Gestion locative</h3>
+                <p>Nous vous aidons à gérer vos locations saisonnières simplement et efficacement.</p>
+                <p><em>20% des revenus locatifs - minimum 45€ par réservation</em></p>
+            </div>
+
+            <div class="service-item">
+                <div class="service-photo">
+                    <img src="assets/imgs/produits-entretien.png" alt="Ménage">
+                </div>
+                <h3>Ménage</h3>
+                <p>Des prestations de nettoyage pour garantir des logements propres et accueillants.</p>
+                <p><em>À partir de 60€ par séjour</em></p>
+            </div>
+
+            <div class="service-item">
+                <div class="service-photo">
+                    <img src="assets/imgs/services-loc.png" alt="Services voyageurs">
+                </div>
+                <h3>Services voyageurs</h3>
+                <p>Accueil personnalisé et services supplémentaires pour rendre chaque séjour agréable.</p>
+                <p><em>À partir de 25€/mois</em></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="advantages">
+        <h2>Pourquoi Esprit Rivage ?</h2>
+        <div class="container advantages-container">
+
+            <div class="advantage-item">
+                <div class="advantage-photo">
+                    <img src="assets/imgs/ville-normandie.jpeg" alt="Proximité locale">
+                </div>
+                <h3>Proximité locale</h3>
+                <p>Nous connaissons parfaitement la Côte Fleurie pour mieux accompagner propriétaires et voyageurs.</p>
+            </div>
+
+            <div class="advantage-item">
+                <div class="advantage-photo">
+                    <img src="assets/imgs/services-perso.jpg" alt="Services personnalisés">
+                </div>
+                <h3>Services personnalisés</h3>
+                <p>Chaque logement et chaque séjour est traité selon vos besoins et attentes spécifiques.</p>
+            </div>
+
+            <div class="advantage-item">
+                <div class="advantage-photo">
+                    <img src="assets/imgs/expertise-numerique.jpg" alt="Expertise numérique">
+                </div>
+                <h3>Expertise numérique</h3>
+                <p>Grâce à nos compétences digitales, nous optimisons la gestion et la visibilité des locations.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" u
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="include.js"></script>
