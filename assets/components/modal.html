@@ -8,7 +8,7 @@
 
         <div class="mb-3">
             <label>Nom / Prénom</label>
-            <input type="text" class="form-control" name="name" required>
+            <input type="text" class="form-control" name="nom" required>
         </div>
 
         <div class="mb-3">
@@ -18,7 +18,7 @@
 
         <div class="mb-3">
             <label>Téléphone</label>
-            <input type="tel" class="form-control" name="phone">
+            <input type="tel" class="form-control" name="telephone">
         </div>
 
         <div class="mb-3">
@@ -28,7 +28,7 @@
 
         <div class="mb-3">
             <label>Type du bien (studio, T2, etc.)</label>
-            <input type="text" class="form-control" name="type" required>
+            <input type="text" class="form-control" name="type de bien" required>
         </div>
 
         <div class="mb-3">
@@ -42,20 +42,33 @@
         </div>
 
         <div class="mb-3">
-            <label>Services souhaités</label>
-            <textarea class="form-control" name="services"></textarea>
+            <fieldset>
+                <legend>Services souhaités</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="services" value="essentiellle">
+                    <label class="form-check-label">Formule essentielle (entrées/sorties + ménage)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="services" value="gestion locative">
+                    <label class="form-check-label">Gestion locative</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="services" value="ménage">
+                    <label class="form-check-label">Ménage</label>
+                </div>
+            </fieldset>
         </div>
 
         <div class="mb-3">
             <label>Annonce existante ?</label><br>
 
             <label>
-                <input type="radio" name="annonce" value="oui">
+                <input type="radio" name="annonce" value="existante">
                 Oui
             </label>
 
             <label>
-                <input type="radio" name="annonce" value="non">
+                <input type="radio" name="annonce" value="non existante">
                 Non
             </label>
         </div>

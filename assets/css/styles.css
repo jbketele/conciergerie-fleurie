@@ -761,3 +761,7 @@ form .btn {
     border: none;
     cursor: pointer;
 }
+
+legend {
+    font-size: 1rem;
+}
